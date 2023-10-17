@@ -1,0 +1,380 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* body styling */
+body {
+    background-color: #fffeeca4;
+    ;
+}
+
+/*-------------------------------------------- Sections styling ------------------------------------*/
+/*--------------------------------- Navigation Bar styles --------------------------------------*/
+nav {
+    background-color: #333;
+    color: white;
+}
+
+nav .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav .nav-links {
+    list-style: none;
+}
+
+nav .nav-links li {
+    display: inline-flex;
+    margin: 2% 1% 2% 1%;
+}
+
+nav .nav-links a {
+    text-decoration: none;
+    color: white;
+}
+
+
+/*---------------------------------- header section (Homepage styles) ----------------------------*/
+
+.container {
+    max-width: 100%;
+    color: #333333;
+    text-shadow: 1px 1px 0 #335fffb6;
+}
+
+.hero {
+
+    background-image: url(images/bg1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    padding: 10%;
+    text-align: center;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 3vw;
+}
+
+.hero h3 {
+    font-size: 1.5vw;
+    margin-top: 1%;
+}
+
+.booking-button {
+    font-size: 1.5vw;
+    display: inline-block;
+    padding: 1vw 1.5vw;
+    background-color: #3e3e3e;
+    /* Change to your desired button color */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 1%;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.booking-button:hover {
+    background-color: rgb(96, 213, 255);
+}
+
+
+
+
+/* -------------------------------------Services section--------------------------------------- */
+.services-section {
+    position: relative;
+    height: 50rem;
+    overflow: hidden;
+}
+
+.services-background {
+    background-image: url('images/bg2.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    font-size: 7vw;
+    text-align: center;
+    padding: 100px 0;
+    opacity: 0.5;
+}
+
+.services-background h1 {
+    color: #333333cf;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 0 #335fffb6, 4px 4px 0 #4980ff96, 6px 6px 0 #99b9ff61;
+}
+
+#services-slides {
+    display: flex;
+}
+
+.services-details {
+    width: 50%;
+    height: 20rem;
+    background: #dad9f75e;
+    ;
+    display: flex;
+    justify-content: center;
+    transition: transform 0.5s;
+}
+
+.services-img {
+    width: 50%;
+    height: 20rem;
+    display: block;
+}
+
+.service-img {
+    width: 100%;
+    height: inherit;
+    display: none;
+    transition: transform 0.5s;
+}
+
+.service-text {
+    max-height: inherit;
+    overflow: auto;
+    display: none;
+    text-align: left;
+    padding: 10%;
+}
+
+.service-img img {
+    width: 100%;
+    height: inherit;
+}
+
+.active {
+    display: block;
+}
+
+
+/* ---------------------------------------------Portfolio section---------------------------------------------------- */
+
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2%;
+    justify-content: center;
+}
+
+.heading {
+    padding: auto;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    letter-spacing: 1.5vw;
+}
+
+.portfolio-item {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+    width: 28%;
+    margin: 1%;
+    padding: 1%;
+    text-align: center;
+}
+
+.portfolio-item img {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.portfolio-item h3 {
+    font-size: 1.5rem;
+    margin: 15px 0;
+}
+
+.portfolio-item p {
+    font-size: 1rem;
+    color: #333333df;
+}
+
+.portfolio-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.portfolio-item:hover img {
+    transform: scale(1.1);
+}
+
+
+
+/* -----------------------------------call back request section------------------------------------ */
+
+section {
+    padding: 20px;
+}
+
+#booking {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.input {
+    width: 30%;
+    display: flex;
+    margin-top: 20px;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="date"],
+select {
+    padding: 10px;
+    padding-left: 5px;
+    width: 70%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+.input label {
+    padding: 10px;
+    padding-right: 0;
+    width: 70%;
+    outline: none;
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus,
+select:focus {
+    border-color: #007BFF;
+}
+
+
+#submit-button {
+    background-color: #252525;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#submit-button:hover {
+    background-color: #6c6c6c;
+    color: black;
+}
+
+#submit-button:focus {
+    outline: none;
+}
+
+
+/* -------------------------------------footer section-------------------------------- */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 5%;
+}
+
+#contact a {
+    text-decoration: none;
+    color: rgb(144, 243, 240);
+}
+
+/* -------------------------------Media Queries for Responsiveness----------------------------- */
+
+@media (max-width: 850px) {
+    .portfolio-item {
+        width: 40%;
+    }
+
+    .input {
+        width: 50%;
+        ;
+    }
+}
+
+@media (max-width: 500px) {
+    /* for header section */
+    .hero {
+        padding: 5%;
+    }
+
+    .hero h1 {
+        font-size: 5vw;
+    }
+
+    .hero h3 {
+        font-size: 2.5vw;
+        margin-top: 1%;
+    }
+
+    .booking-button {
+        font-size: 2.5vw;
+        padding: 1vw 1.5vw;
+    }
+
+    /* for services section */
+    .services-section {
+        height: 35rem;
+    }
+
+    #services-slides {
+        display: block;
+        position: relative;
+    }
+
+    .services-details {
+        width: 100%;
+        height: 20rem;
+        position: absolute;
+        z-index: 2;
+        background: #b1e6ed72;
+        color: rgb(0, 0, 0);
+        transition: transform 0.5s;
+    }
+
+    .services-img {
+        width: 100%;
+        height: 20rem;
+        position: absolute;
+        z-index: 1;
+    }
+
+    /* for portfolio section */
+    .portfolio-item {
+        width: 100%;
+    }
+
+    .input {
+        width: 100%;
+    }
+}
