@@ -370,6 +370,9 @@ footer {
     }
 
     /* for portfolio section */
+    #portfolio{
+        margin-top: 18rem;
+    }
     .portfolio-item {
         width: 100%;
     }
